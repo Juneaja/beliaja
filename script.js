@@ -262,11 +262,11 @@ function sendToWhatsApp() {
     }
 
     const orderText = cart.map(item => 
-        `${item.name} (${item.quantity}x) = Rp ${formatRupiah(item.price * item.quantity)}`
+        `• ${item.name} (${item.quantity}x) = Rp ${formatRupiah(item.price * item.quantity)}`
     ).join('\n');
 
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const message = `Halo! Saya ingin pesan:\n\n${orderText}\n\n*Total: Rp ${formatRupiah(total)}*\n\nTerima kasih!`;
+    const message = `Halo! Saya ingin pesan:\n\n${orderText}\n\n*Total: Rp ${formatRupiah(total)}*\n\nTerima kasih! 😊`;
 
     const whatsappNumber = '6289602337878'; // Ganti dengan nomor WA Anda
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
