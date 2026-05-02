@@ -64,7 +64,7 @@ body {
 }
 
 .cart-count {
-    background: #009900;
+    background: #003300;
     color: white;
     border-radius: 50%;
     padding: 2px 6px;
@@ -114,7 +114,7 @@ body {
 
 .cta-btn {
     display: inline-block;
-    background: #e74c3c;
+    background: #003300;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
