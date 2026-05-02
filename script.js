@@ -272,9 +272,9 @@ function sendToWhatsApp() {
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappURL, '_blank');
-    cartModal.style.display = 'none';
+    clearCart();
 }
-clearCart();
+
 function showNotification(message) {
     // Create notification
     const notification = document.createElement('div');
