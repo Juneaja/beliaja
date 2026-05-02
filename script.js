@@ -274,7 +274,7 @@ function sendToWhatsApp() {
     window.open(whatsappURL, '_blank');
     cartModal.style.display = 'none';
 }
-
+clearCart();
 function showNotification(message) {
     // Create notification
     const notification = document.createElement('div');
